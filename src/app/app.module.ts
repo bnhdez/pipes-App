@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -25,7 +25,12 @@ registerLocaleData( localeFrCA );
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    {
+      // idioma por defecto
+      provide: LOCALE_ID, useValue: 'es-SV'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

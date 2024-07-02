@@ -32,4 +32,11 @@ export class UncommonPageComponent {
     // shift elimina el primer elemento
     this.clients.shift();
   }
+
+  // keyValuePipe
+  public person = {
+    name: 'Boris',
+    age: 22,
+    address: 'Santa Tecla, El Salvador'
+  }
 }

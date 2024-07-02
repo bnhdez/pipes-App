@@ -9,9 +9,11 @@ import { SharedModule } from './shared/shared.module';
 
 // Configuracion del locale de la app
 import localeEsSV from '@angular/common/locales/es-SV';
+import localeFrCA from '@angular/common/locales/fr-CA';
 import { registerLocaleData } from '@angular/common';
 
 registerLocaleData( localeEsSV );
+registerLocaleData( localeFrCA );
 
 @NgModule({
   declarations: [

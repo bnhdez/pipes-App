@@ -22,7 +22,7 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    PrimeNgModule,
+    PrimeNgModule
   ]
 })
 export class ProductsModule { }
